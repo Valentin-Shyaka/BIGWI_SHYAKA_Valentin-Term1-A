@@ -36,12 +36,12 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.testng</groupId>-->
-<!--			<artifactId>testng</artifactId>-->
-<!--			<version>7.7.1</version>-->
-<!--			<scope>test</scope>-->
-<!--		</dependency>-->
+		<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+			<version>7.7.1</version>
+			<scope>test</scope>
+		</dependency> 
 		<dependency>
 			<groupId>org.junit.vintage</groupId>
 			<artifactId>junit-vintage-engine</artifactId>
