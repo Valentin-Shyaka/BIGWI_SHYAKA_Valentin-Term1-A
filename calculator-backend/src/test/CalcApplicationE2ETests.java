@@ -20,14 +20,14 @@ public class CalcApplicationE2ETests {
 
     @BeforeEach
     public void setUp() {
-        // Set up WebDriver (assuming you have ChromeDriver installed)
+        
         System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
         driver = new ChromeDriver();
     }
 
     @AfterEach
     public void tearDown() {
-        // Close the browser after each test
+      
         if (driver != null) {
             driver.quit();
         }
@@ -35,22 +35,19 @@ public class CalcApplicationE2ETests {
 
     @Test
     public void testDoMathOperation_E2E() {
-        // Given
         driver.get("http://localhost:" + port + "/");  // Assuming your application is running at the root context
 
-        // Find input fields and submit button
+        
         WebElement operand1Input = driver.findElement(By.id("operand1"));
         WebElement operand2Input = driver.findElement(By.id("operand2"));
         WebElement operationInput = driver.findElement(By.id("operation"));
         WebElement calculateButton = driver.findElement(By.id("calculateButton"));
 
-        // When
         operand1Input.sendKeys("3");
         operand2Input.sendKeys("3");
         operationInput.sendKeys("+");
         calculateButton.click();
 
-        // Then
         WebElement resultElement = driver.findElement(By.id("result"));
         String resultText = resultElement.getText();
         assertEquals("6.0", resultText);
