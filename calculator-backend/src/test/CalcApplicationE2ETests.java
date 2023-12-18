@@ -35,7 +35,7 @@ public class CalcApplicationE2ETests {
 
     @Test
     public void testDoMathOperation_E2E() {
-        driver.get("http://localhost:" + port + "/");  // Assuming your application is running at the root context
+        driver.get("http://localhost:" + port + "/");  
 
         
         WebElement operand1Input = driver.findElement(By.id("operand1"));
