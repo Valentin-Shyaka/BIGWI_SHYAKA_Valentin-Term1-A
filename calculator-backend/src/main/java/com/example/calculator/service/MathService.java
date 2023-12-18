@@ -15,9 +15,6 @@ public class MathService {
             case "/" -> operand1 / operand2;
             case "+" -> operand1 + operand2;
             case "-" -> operand1 - operand2;
-            case "**" -> Math.pow(operand1, operand2);
-            case "log" -> operand1 * Math.log10(operand2);
-            case "ln" -> operand1 * Math.log(operand2);
             default -> throw new RuntimeException("Unknown operation");
         };
     }

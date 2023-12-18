@@ -27,17 +27,6 @@ public class MathServiceTest {
     }
 
     @Test
-    public void doMathSuccess2() throws InvalidOperationException {
-        DoMathRequest data = new DoMathRequest(
-                6,
-                4,
-                "log"
-        );
-        double result = mathService.doMath(data.getOperand1(), data.getOperand2(), data.getOperation());
-        assertEquals(3.612359947967774, result);
-    }
-
-    @Test
     public void doMathInvalidOperation() throws InvalidOperationException {
         DoMathRequest data = new DoMathRequest(
                 6,
