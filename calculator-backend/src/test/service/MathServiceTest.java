@@ -45,7 +45,7 @@ public class MathServiceTest {
                 "/"
         );
         double result = mathService.doMath(data.getOperand1(), data.getOperand2(), data.getOperation());
-        assertEquals( new InvalidOperationException("Cannot divide by 0"), result);
+        assertEquals( new InvalidOperationException("Not divisable by 0"), result);
     }
 }
 

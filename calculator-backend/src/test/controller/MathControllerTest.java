@@ -69,7 +69,7 @@ public class MathControllerTest {
         MvcResult result = mockMvc
                 .perform(request)
                 .andExpect(status().isBadRequest())
-                .andExpect(content().string("Cannot divide by 0"))
+                .andExpect(content().string("not divisable by 0"))
                 .andReturn();
     }
 
